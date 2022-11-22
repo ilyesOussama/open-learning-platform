@@ -36,7 +36,7 @@ const Auth = () => {
 
   useEffect(() => {
     setHandle(data?.profiles?.items[0]?.handle);
-  }, [data]);
+  }, []);
   /* 
   useEffect(() => {
     getDefaultProfile();
