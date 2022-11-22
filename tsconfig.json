@@ -13,8 +13,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components*": ["src/components*"],
+      "@abis*": ["src/abis*"],
+      "@utils*": ["src/utils*"],
+      "@lib*": ["src/lib*"],
+      "@gql*": ["src/graphql*"],
+      "@generated*": ["src/generated*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/bundlr.jsx",
+    "src/context.js",
+    "src/pages/api/api.js"
+  ],
   "exclude": ["node_modules"]
 }
