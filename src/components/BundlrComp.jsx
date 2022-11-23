@@ -75,7 +75,7 @@ const BundlrComp = () => {
           className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           onClick={initialize}
         >
-          Initialize
+          Initialize bundlr
         </button>
       )}
       {balance && (
@@ -140,8 +140,8 @@ const BundlrComp = () => {
             <div className="mt-1 sm:mt-0 sm:col-span-2">
               <input
                 type="text"
-                name="Category"
-                id="Category"
+                name="category"
+                id="category"
                 onChange={(e) =>
                   setFormData({ ...formData, category: e.target.value })
                 }
@@ -213,7 +213,7 @@ const BundlrComp = () => {
             </div>
           </div>
 
-          <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start py-4 sm:pt-5 p-4">
+          <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start py-4 sm:pt-5 p-4 sm:border-t sm:border-gray-200 dark:border-gray-700">
             <label
               htmlFor="videoUrl"
               className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2 dark:text-gray-100"

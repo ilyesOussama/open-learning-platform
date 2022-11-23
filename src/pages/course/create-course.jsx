@@ -34,7 +34,7 @@ const CreateCourse = () => {
   }
 
   return (
-    <div>
+    <div className="py-8">
       <MainContext.Provider
         value={{
           initialiseBundlr,

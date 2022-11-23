@@ -11,6 +11,9 @@ import ThemeButton from "./ThemeButton";
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Auth from "../Authentication";
+import Link from "next/link";
+
+import { useRouter } from "next/router";
 
 const user = {
   name: "Chelsea Hagon",
@@ -30,6 +33,7 @@ const userNavigation = [
 ];
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       {/* When the mobile menu is open, add `overflow-hidden` to the `body` element to prevent double scrollbars */}
@@ -49,9 +53,9 @@ const Navbar = () => {
                 <div className="flex md:absolute md:left-0 md:inset-y-0 lg:static xl:col-span-2">
                   <div className="flex-shrink-0 flex items-center">
                     <a href="#">
-                      <span className="text-gray-900 dark:text-white">
+                      <Link href="/" className="text-gray-900 dark:text-white">
                         Logo
-                      </span>
+                      </Link>
                     </a>
                   </div>
                 </div>
@@ -91,6 +95,15 @@ const Navbar = () => {
                   </Popover.Button>
                 </div>
                 <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4">
+                  <Link
+                    href="/course/create-course"
+                    className={clsx(
+                      "mr-8 hover:bg-gray-200 p-2 rounded-md text-gray-900 dark:text-gray-50 dark:hover:bg-gray-700",
+                      {}
+                    )}
+                  >
+                    Create Course
+                  </Link>
                   {/* <a
                     href="#"
                     className="ml-5 flex-shrink-0 bg-white rounded-full p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
