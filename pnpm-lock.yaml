@@ -59,6 +59,7 @@ specifiers:
   react-hot-toast: ^2.4.0
   react-infinite-scroll-component: ^6.1.0
   react-mentions: ^4.4.7
+  react-player: ^2.11.0
   tailwindcss: ^3.2.2
   typescript: 4.8.4
   uuid: ^9.0.0
@@ -105,6 +106,7 @@ dependencies:
   react-hot-toast: 2.4.0_biqbaboplfbrettd7655fr4n2y
   react-infinite-scroll-component: 6.1.0_react@18.2.0
   react-mentions: 4.4.7_biqbaboplfbrettd7655fr4n2y
+  react-player: 2.11.0_react@18.2.0
   uuid: 9.0.0
   wagmi: 0.7.15_ir5rj4sfbt34e63yhlgyn6mx7a
   zod: 3.19.1
@@ -7120,6 +7122,10 @@ packages:
       - immer
     dev: false
 
+  /load-script/1.0.0:
+    resolution: {integrity: sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==}
+    dev: false
+
   /loadjs/4.2.0:
     resolution: {integrity: sha512-AgQGZisAlTPbTEzrHPb6q+NYBMD+DP9uvGSIjSUM5uG+0jG15cb8axWpxuOIqrmQjn6scaaH8JwloiP27b2KXA==}
     dev: false
@@ -7317,6 +7323,10 @@ packages:
       h264-profile-level-id: 1.0.1_supports-color@9.2.3
       sdp-transform: 2.14.1
       supports-color: 9.2.3
+    dev: false
+
+  /memoize-one/5.2.1:
+    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
     dev: false
 
   /merge-descriptors/1.0.1:
@@ -8397,6 +8407,10 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-fast-compare/3.2.0:
+    resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
+    dev: false
+
   /react-hook-form/7.39.4_react@18.2.0:
     resolution: {integrity: sha512-B0e78r9kR9L2M4A4AXGbHoA/vyv34sB/n8QWJAw33TFz8f5t9helBbYAeqnbvcQf1EYzJxKX/bGQQh9K+evCyQ==}
     engines: {node: '>=12.22.0'}
@@ -8458,6 +8472,19 @@ packages:
       react-native: '*'
     dependencies:
       whatwg-url-without-unicode: 8.0.0-3
+    dev: false
+
+  /react-player/2.11.0_react@18.2.0:
+    resolution: {integrity: sha512-fIrwpuXOBXdEg1FiyV9isKevZOaaIsAAtZy5fcjkQK9Nhmk1I2NXzY/hkPos8V0zb/ZX416LFy8gv7l/1k3a5w==}
+    peerDependencies:
+      react: '>=16.6.0'
+    dependencies:
+      deepmerge: 4.2.2
+      load-script: 1.0.0
+      memoize-one: 5.2.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-fast-compare: 3.2.0
     dev: false
 
   /react-remove-scroll-bar/2.3.4_fan5qbzahqtxlm5dzefqlqx5ia:

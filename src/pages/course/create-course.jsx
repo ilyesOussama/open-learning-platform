@@ -1,11 +1,11 @@
 import { WebBundlr } from "@bundlr-network/client";
-import { MainContext } from "../context";
+import { MainContext } from "../../context";
 import { useState, useRef } from "react";
 import { providers, utils } from "ethers";
 
-import BundlrComp from "../components/BundlrComp";
+import BundlrComp from "../../components/BundlrComp";
 
-const Bundlr = () => {
+const CreateCourse = () => {
   const [bundlrInstance, setBundlrInstance] = useState();
   const [balance, setBalance] = useState();
   const bundlrRef = useRef();
@@ -49,4 +49,4 @@ const Bundlr = () => {
   );
 };
 
-export default Bundlr;
+export default CreateCourse;
