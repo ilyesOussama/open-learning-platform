@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/bundlr.jsx",
+    "src/pages/course/creat-course.jsx",
     "src/context.js",
     "src/pages/api/api.js"
   ],
