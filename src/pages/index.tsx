@@ -26,6 +26,7 @@ const Home: NextPage = ({ data }: any) => {
   const token = useAuthStore((state: any) => state.handle);
 
   const address = useAuthStore((state: any) => state.address);
+  const session = useAuthStore((state: any) => state.session);
   console.log(address);
 
   return (
@@ -40,7 +41,9 @@ const Home: NextPage = ({ data }: any) => {
       </Head>
 
       <main className="">
-        {!token ? (
+        {address && session ? (
+          <CreatePublication />
+        ) : (
           <div className="py-12 border-b bg-hero dark:border-b-gray-700/80 bg-gradient-to-r from-transparent to-green-50 dark:from-gray-900">
             <div className="px-5 mx-auto max-w-screen-xl flex items-stretch py-8 w-full sm:py-12 sm:text-left">
               <div className="flex-1 space-y-3">
@@ -60,8 +63,6 @@ const Home: NextPage = ({ data }: any) => {
               <div className="hidden flex-1 flex-shrink-0 w-full sm:block" />
             </div>
           </div>
-        ) : (
-          <CreatePublication />
         )}
 
         <div className="pl-4 xl:pl-8 text-2xl font-bold py-12">
